@@ -1,22 +1,256 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Olá, mundo!</title>
-  </head>
-  <body>
-    <h1>Olá, mundo!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  <style>
+    .tm-social {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+
+  <title>FPS</title>
+</head>
+
+<body bgcolor="#95afc0">
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">XIII</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Perfil</a>
+            <a class="dropdown-item" href="#">Loja</a>
+            <a class="dropdown-item" href="#">Biblioteca</a>
+            <a class="dropdown-item" href="#">Configurações</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Sair</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+  <!--/NavBar-->
+
+  <!--Carousel-->
+  <div id="carouselImagens" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselImagens" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselImagens" data-slide-to="1"></li>
+      <li data-target="#carouselImagens" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./assets/img/ded.jfif" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./assets/img/vmp.png" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./assets/img/coc.jfif" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselImagens" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselImagens" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <!--/Carousel-->
+
+  <!--Jumbotron-->
+  <div class="jumbotron bg-secondary">
+    <h1 class="display-4">Olá, mundo!</h1>
+    <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou
+      informação.</p>
+    <hr class="my-4">
+    <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+  </div>
+  <!--/Jumbotron-->
+
+   <!--Card-->
+
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <h3 class="text-center">
+        Jogos em Destaque
+      </h3>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card-deck" >
+      <div class="card text-white bg-dark mb-3">
+        <img class="card-img-top" src="./assets/img/vp.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Vampiro a Mascara</h5>
+          <p class="card-text">Vampiro: A Máscara é um cenário de RPG de horror pessoal e fantasia urbana, baseado no sistema Storyteller para a linha de publicações do World of Darkness, centrado em vampiros que habitam um mundo de fantasia sombria.[1][2] Criado por Mark Rein*Hagen, e publicado em 1991 pela editora White Wolf, este RPG venceu o Origins Award na categoria "Melhores Regras de RPG de 1991", e chegou a ter uma segunda edição em 1992 e uma edição revisada em 1998. A referência à Máscara, no título da série, pode ser interpretada a partir de dois sentidos distintos: o primeiro refere-se à tentativa dos seres imortais de esconderem sua própria sociedade vampírica da humanidade, de seus governantes e da mídia; já o segundo sentido é usado para referir-se aos esforços dos vampiros em convencer a si mesmos de que eles ainda possuem resquícios de humanidade, e que não são monstros frios e bestiais guidados pela natureza vampírica.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+      <div class="card text-white bg-dark mb-3">
+        <img class="card-img-top" src="./assets/img/dd.jfif" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Dungeons & Dragons</h5>
+          <p class="card-text">Dungeons & Dragons (abreviado como D&D ou DnD) é um RPG de alta fantasia desenvolvido originalmente por Gary Gygax e Dave Arneson, e publicado pela primeira vez em 1974 nos Estados Unidos pela TSR, Inc., empresa de Gary Gygax. Hoje o jogo é publicado pela Wizards of the Coast. Suas origens são os wargames de miniaturas (principalmente o Chainmail). A publicação do D&D é considerada como a origem dos RPGs modernos e foi lançada no Brasil pela Grow (atualmente pela Galápagos Jogos) e em Portugal pela Sociedade Tipográfica S.A.[1]
+            Jogadores de D&D criam personagens que embarcam em aventuras imaginárias em que eles enfrentam monstros, reúnem tesouros, interagem entre si e ganham pontos de experiência para se tornarem incrivelmente poderosos à medida que o jogo avança. O D&D se destaca dos wargames tradicionais por permitir que cada jogador controle um personagem específico, ao invés de um exército. Miniaturas ou marcadores em um tabuleiro quadriculado são usados ocasionalmente para representar esses personagens. O D&D também apresentou o conceito de Mestre de Jogo (Dungeon Master ou DM, no original), que atua como juiz e narrador e é responsável por manter o cenário ficcional do jogo e aplicar as regras a cada situação descrita.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+      <div class="card text-white bg-dark mb-3">
+        <img class="card-img-top" src="./assets/img/cc.png" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Call Of Cthullu</h5>
+          <p class="card-text">Era inevitável. O carro chefe dos jogos de RPG no mundo inteiro são os jogos com temática medieval. Isso ninguém discute. Tudo teve início com o bom e velho Dungeons and Dragons afinal de contas. E como aconteceu com Vampire que se rendeu e lançou alguns anos atrás a sua versão Dark Age, acontece agora com o Call of Cthulhu que lança um suplemento de campanha chamado… Cthulhu Dark Ages. A razão pela qual essa era de decadência e brutalidade fascina tanto as pessoas poderia ser objeto de estudo para uma longa dissertação, porém o objetivo desse texto é analisar este último lançamento da Chaosium. Bem vejamos então:</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+    </div>
+    <!--/Card-->
+
+    <!--/Texto e Video-->
+
+    <div class="row mt-5 mb-5 ">
+      <div class="col-md-6">
+        <h3>TEXTO TESTE</h3>
+        <p>
+          A capa é uma excelente: escura, sinistra e soturna, ela mostra um guerreiro com uma tocha, vestido com uma armadura de correntes investigando o que parece ser uma erma caverna. No fundo o Elder Sign brilha de forma tênue e ameaçadora. De um modo geral a arte interna é boa. De forma alguma tem a mesma qualidade da capa, mas se não é perfeita, ao menos não compromete o livro. Todo o interior é em preto e branco, com muitos tons de cinza, e há ilustrações em praticamente todas as páginas. A diagramação é adequada, tornando o livro fácil e gostoso de ler. Há centenas de caixas contendo informações e tabelas espalhadas pelo livro que facilitam a busca no meio do jogo. Infelizmente as tabelas mais importantes não são compiladas no final do livro o que tornaria o trabalho do mestre mais fácil. Mesmo assim há um índice que facilita um pouco.
+
+
+        </p>
+        <p>
+          Trata-se de um bom livro para novos e velhos jogadores de Cthulhu. O conceito de uma Era das Trevas mais realista irá agradar aos jogadores e mestres atrás de um maior grau de autenticidade em sua campanha, ao mesmo tempo em que será divertido ver os resultados de um combate entre um guerreiro armado com uma espada contra um Hound of Tindalos ou Star Spawn. Não sei se o jogo sustenta a criação de uma campanha contínua usando os mesmos personagens, porém para aventuras one-shot o livro se mostra uma ótima opção.
+        </p>
+      </div>
+  
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3aCIQN0J2bU" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!--/Texto e Video-->
+
+    <!--/Formulario-->
+
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <h4 class="text-center">
+          Entre em contato
+        </h4>
+      </div>
+    </div>
+
+    <div class="row d-flex dalign-items-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Assunto</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Duvidas</option>
+              <option>Criticas</option>
+              <option>Bugs</option>
+              <option>Sujestões</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="form-group d-flex justify-content-lg-start">
+            <button class="btn btn-outline-lift">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29246.445083262737!2d-46.60741814213232!3d-23.611302618095593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c80e1cf4d9b%3A0x82dc0eb8038f7d3c!2sCidade%20Nova%20Heli%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1615308549424!5m2!1spt-BR!2sbr"
+                width="400" height="290" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"  ></iframe>
+      </div>
+
+    </div>
+
+    <!--/Formulario-->
+
+
+    <!--Rodapé-->
+    <hr>
+    <footer>
+
+      <div class="row mb-3 ">
+        <div class="col-md-12 d-flex justify-content-center">
+
+          <a href="https://www.linkedin.com/in/gustavo-guilhen/" target="_blank" class="p-3">
+            <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
+          </a>
+
+          <a href="https://github.com/GUSTAVO-GUILHEN" target="_blank" class="p-3">
+            <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub">
+          </a>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center">
+            Todos os direitos reservados: Gustavo Guilhen &copy;
+          </p>
+        </div>
+      </div>
+
+    </footer>
+    <!--/Rodapé-->
+
+  </div>
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
